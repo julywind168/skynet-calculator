@@ -2,15 +2,8 @@ local moudle = {
     "lobby",
 }
 
-local game = {
-    lobby = {
-        online = 0,
-        players = {}
-    }
-}
-
+local game = {}
 local rwlock = {}
-
 
 local function lock(str)
     return function(f)
