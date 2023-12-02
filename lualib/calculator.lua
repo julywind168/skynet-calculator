@@ -117,9 +117,7 @@ function Calculator:find_conflict()
 	return false
 end
 
-local count = 0
 function Calculator:_push(name, params, response, rwlock)
-	count = count + 1
 	if self.nextone.empty then
 		local conflict = self:check_slots(rwlock)
 		local idx = self:find_a_empty_solt()

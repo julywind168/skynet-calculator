@@ -4,7 +4,7 @@ local calculator = require "lualib.calculator"
 
 storage.init {
     usermgr = {
-        online = 100,
+        count = 0,
         usermap = {} -- id => User
     },
 }
