@@ -1,3 +1,7 @@
+function string:trim()
+    return (self:gsub("^%s*(.-)%s*$", "%1"))
+end
+
 function string:split(sep)
     local splits = {}
 
